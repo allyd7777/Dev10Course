@@ -1,0 +1,52 @@
+footer {
+	text-align:center;
+	font-family: 'Roboto Mono', monospace;
+	padding:10px;
+}
+
+header {
+	text-align:center;
+	color:light blue;
+	font-family: 'Zhi Mang Xing', cursive;
+	padding:10px;
+}
+
+nav {
+	border-top: thin #2e2e1f solid;
+	border-bottom: thin #2e2e1f solid;
+	padding-top: 15px;
+}    
+    
+nav .btn {
+	background-color: #2e2e1f;
+	color: #fef9ff; 
+	text-align: center;
+}
+    
+nav .btn:hover {
+	font-weight: bold;
+}
+
+h2, h1 {
+	font-family:'Zhi Mang Xing', cursive;
+	text-align:center;
+}
+
+a {
+  font-family: monospace;
+  text-decoration: underline;
+  font-weight: none;
+}
+
+a:visited {
+  color: #8cd98c;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+a:hover {
+  text-decoration: bold;
+}
+
