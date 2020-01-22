@@ -14,7 +14,6 @@ function playGame() {
 	if(initialBet == "" || isNaN(initialBet) || initialBet <=0){
 		alert("Starting bet must be a number greater than 0.");
 	}
-	
 	else{
 		while(money>0){
 			dice1 = rollDice();
@@ -24,15 +23,15 @@ function playGame() {
 			if (diceSum == 7){
 				money = money + 4;
 				console.log("win. You now have $" + money + ".");
+				if (money > maxMoney){
+					maxMoney = money;
+					maxTurns = turns;
+				}
 			}
 			else{
 				money--;
 				console.log("Lose. You now have $" + money + ".");
 			}
-		}
-		if (money > maxMoney){
-			maxMoney = money;
-			maxTurns = turns;
 		}
 	}
 	document.getElementById("results").style.display = "block";
